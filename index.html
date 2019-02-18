@@ -8,46 +8,73 @@
 	<h1>Volunteer Form</h1>
 	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST" autocomplete="on"></form>
 	<fieldset>
-		<legend><h3>My Info</h3></legend>
+		<legend><h2>My Info</h2></legend>
+		<p>
+			<label>First Name: <input type="text" name="first_name_field"></label>
+		</p>
+		<p>
+			<label>Last Name: <input type="text" name="last_name_field"></label>
+		</p>
+		<p>
+			<label>Phone Number: <input type="number" name="phone_field"></label>
+		</p>
+		<p>
+			<label>Email Address: <input type="email" name="email_field"></label>
+		</p>
+		<p>
+			Gender: 
+			<input type="button" name="gender_field" value="Male">
+			<input type="button" name="gender_field" value="Female">
+		</p>
+		<p>
+			Age: 
 			<p>
-				<label>First Name: <input type="text" name="first_name_field"></label>
+				<label>Under 18 <input type="radio" name="age_field" value="Under 18"></label>
 			</p>
 			<p>
-				<label>Last Name: <input type="text" name="last_name_field"></label>
+				<label><input type="radio" name="age_field" value="18 - 24"> 18 - 24</label>
 			</p>
 			<p>
-				<label>Phone Number: <input type="number" name="phone_field"></label>
+				<label><input type="radio" name="age_field" value="25 - 34"> 25 - 34</label>
 			</p>
 			<p>
-				<label>Email Address: <input type="email" name="email_field"></label>
+				<label><input type="radio" name="age_field" value="35 - 44"> 35 - 44</label>
 			</p>
 			<p>
-				Gender: 
-				<input type="button" name="gender_field" value="Male">
-				<input type="button" name="gender_field" value="Female">
+				<label><input type="radio" name="age_field" value="45 - 54"> 45 - 54</label>
 			</p>
 			<p>
-				Age: 
-				<p>
-					<label>Under 18 <input type="radio" name="age_field" value="Under 18"></label>
-				</p>
-				<p>
-					<label>18 - 24 <input type="radio" name="age_field" value="18 - 24"></label>
-				</p>
-				<p>
-					<label>25 - 34 <input type="radio" name="age_field" value="25 - 34"></label>
-				</p>
-				<p>
-					<label>35 - 44 <input type="radio" name="age_field" value="35 - 44"></label>
-				</p>
-				<p>
-					<label>45 - 54 <input type="radio" name="age_field" value="45 - 54"></label>
-				</p>
-				<p>
-					<label>55 - 64 <input type="radio" name="age_field" value="55 - 64"></label>
-				</p>
-				<p>
-					<label>65 and Over <input type="radio" name="age_field" value="65 and Over"></label>
-				</p>
+				<label><input type="radio" name="age_field" value="55 - 64"> 55 - 64</label>
+			</p>
+			<p>
+				<label><input type="radio" name="age_field" value="65 and Over"> 65 and Over</label>
+			</p>
+	</fieldset>
+	<fieldset>
+		<legend><h2>My Availability</h2></legend>
+		<p>
+			Days Available: 
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Sunday"> Sunday</label>
+			</p>
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Monday"> Monday</label>
+			</p>
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday</label>
+			</p>
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday</label>
+			</p>
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Thursday"> Thursday</label>
+			</p>
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Friday"> Friday</label>
+			</p>
+			<p>
+				<label><input type="checkbox" name="available_field[]" value="Saturday"> Saturday</label>
+			</p>
+		</p>
 	</fieldset>
 </body>
