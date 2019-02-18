@@ -6,30 +6,40 @@
 </head>
 <body>
 	<h1>Volunteer Form</h1>
-	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST" autocomplete="on" enctype="multipart/form-data"></form>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST"></form>
 	<fieldset>
 		<legend><h2>My Info</h2></legend>
 		<p>
-			<label>First Name: <input type="text" name="first_name_field"></label>
+			<label for="firstn">First Name: </label>
+			<input type="text" name="first_name_field" id="firstn">
 		</p>
 		<p>
-			<label>Last Name: <input type="text" name="last_name_field"></label>
+			<label for="lastn">Last Name: </label> 
+			<input type="text" name="last_name_field" id="lastn">
 		</p>
 		<p>
-			<label>Phone Number: <input type="text" name="phone_field"></label>
+			<label for="phone">Phone Number: </label> 
+			<input type="text" name="phone_field" id="phone">
 		</p>
 		<p>
-			<label>Email Address: <input type="email" name="email_field"></label>
+			<label for="email">Email Address: </label> 
+			<input type="email" name="email_field" id="email">
 		</p>
 		<p>
 			Gender: 
-			<input type="button" name="gender_field" value="Male">
-			<input type="button" name="gender_field" value="Female">
+			<p>
+				<input type="radio" name="gender_field" value="Male" id="male">
+				<label for="male"> Male</label>
+			</p>
+			<p>
+				<input type="radio" name="gender_field" value="Female" id="female">
+				<label for="female"> Female</label>
+			</p>
 		</p>
 		<p>
-			Age: 
-			<select name="age_field">
-				<option value="Age Not Specified"><em>Select Age</em></option>
+			<label for="age">Age: </label>
+			<select name="age_field" id="age">
+				<option value="Age Not Specified">Select Age</option>
 				<option value="Under 18">Under 18</option>
 				<option value="18 - 24">18 - 24</option>
 				<option value="25 - 34">25 - 34</option>
@@ -44,25 +54,32 @@
 		<p>
 			Days Available: 
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Sunday"> Sunday</label>
+				<input type="checkbox" name="available_field[]" value="Sunday" id="sunday"> 
+				<label for="sunday"> Sunday</label>
 			</p>
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Monday"> Monday</label>
+				<input type="checkbox" name="available_field[]" value="Monday" id="monday">
+				<label for="monday"> Monday</label>
 			</p>
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday</label>
+				<label><input type="checkbox" name="available_field[]" value="Tuesday" id="tuesday">
+				<label for="tuesday"> Tuesday</label>
 			</p>
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday</label>
+				<label><input type="checkbox" name="available_field[]" value="Wednesday" id="wednesday">
+				<label for="wednesday"> Wednesday</label>
 			</p>
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Thursday"> Thursday</label>
+				<label><input type="checkbox" name="available_field[]" value="Thursday" id="thursday">
+				<label for="thursday"> Thursday</label>
 			</p>
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Friday"> Friday</label>
+				<label><input type="checkbox" name="available_field[]" value="Friday" id="firday">
+				<label for="friday"> Friday</label>
 			</p>
 			<p>
-				<label><input type="checkbox" name="available_field[]" value="Saturday"> Saturday</label>
+				<label><input type="checkbox" name="available_field[]" value="Saturday" id="saturday">
+				<label for="saturday"> Saturday</label>
 			</p>
 		</p>
 		<p>
