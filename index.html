@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>Volunteer Form</h1>
-	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST" autocomplete="on"></form>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST" autocomplete="on" enctype="multipart/form-data"></form>
 	<fieldset>
 		<legend><h2>My Info</h2></legend>
 		<p>
@@ -28,27 +28,16 @@
 		</p>
 		<p>
 			Age: 
-			<p>
-				<label>Under 18 <input type="radio" name="age_field" value="Under 18"></label>
-			</p>
-			<p>
-				<label><input type="radio" name="age_field" value="18 - 24"> 18 - 24</label>
-			</p>
-			<p>
-				<label><input type="radio" name="age_field" value="25 - 34"> 25 - 34</label>
-			</p>
-			<p>
-				<label><input type="radio" name="age_field" value="35 - 44"> 35 - 44</label>
-			</p>
-			<p>
-				<label><input type="radio" name="age_field" value="45 - 54"> 45 - 54</label>
-			</p>
-			<p>
-				<label><input type="radio" name="age_field" value="55 - 64"> 55 - 64</label>
-			</p>
-			<p>
-				<label><input type="radio" name="age_field" value="65 and Over"> 65 and Over</label>
-			</p>
+			<select name="age_field">
+				<option value="Age Not Specified"><em>Select Age</em></option>
+				<option value="Under 18">Under 18</option>
+				<option value="18 - 24">18 - 24</option>
+				<option value="25 - 34">25 - 34</option>
+				<option value="35 - 44">35 - 44</option>
+				<option value="45 - 54">45 - 54</option>
+				<option value="55 - 64">55 - 64</option>
+				<option value="65 and Over">65 and Over</option>
+			</select>
 	</fieldset>
 	<fieldset>
 		<legend><h2>My Availability</h2></legend>
